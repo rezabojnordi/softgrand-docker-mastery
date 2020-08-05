@@ -31,7 +31,9 @@ CMD python ./index.py
       ``` how to build dockerfile in docker```
      docker build -t python-barcode .
           
-``` how to using host network in docker```
+```
+how to using host network in docker
+```
 docker run --rm -d --network host --name my_nginx nginx
 
 
