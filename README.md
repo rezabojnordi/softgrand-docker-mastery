@@ -18,6 +18,23 @@ Docker Engine uses namespaces such as the following on Linux:
 
 Let see tool called nsenter which helps in accessing the container. nsenter is a small tool allowing to enter into namespaces. Technically, it can enter existing namespaces, or spawn a process into a new set of namespaces.
 
+for example
+```Dockerfile```
+FROM python:alpine3.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE 5000
+CMD python ./index.py
+      ``` how to build dockerfile in docker```
+     docker build -t python-barcode .
+          
+``` how to using host network in docker```
+docker run --rm -d --network host --name my_nginx nginx
+
+
+
+
 Let’s try nsenter, starting with the installation of this tool.
 
 <img src="docker.png" height="300" width="300"></img>
