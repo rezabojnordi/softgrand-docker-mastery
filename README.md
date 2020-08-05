@@ -20,12 +20,14 @@ Let see tool called nsenter which helps in accessing the container. nsenter is a
 
 for example
 ```Dockerfile```
+```
 FROM python:alpine3.7
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 5000
 CMD python ./index.py
+```
       ``` how to build dockerfile in docker```
      docker build -t python-barcode .
           
