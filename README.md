@@ -19,7 +19,10 @@ Docker Engine uses namespaces such as the following on Linux:
 Let see tool called nsenter which helps in accessing the container. nsenter is a small tool allowing to enter into namespaces. Technically, it can enter existing namespaces, or spawn a process into a new set of namespaces.
 
 for example
-```Dockerfile```
+```
+Dockerfile
+
+```
 ```
 FROM python:alpine3.7
 COPY . /app
@@ -27,7 +30,8 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 5000
 CMD python ./index.py ```
-```
+
+
       ```
       how to build dockerfile in docker
       
