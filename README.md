@@ -26,7 +26,7 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 5000
-CMD python ./index.py
+CMD python ./index.py ```
 ```
       ``` how to build dockerfile in docker```
      docker build -t python-barcode .
