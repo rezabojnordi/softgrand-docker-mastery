@@ -43,7 +43,7 @@ CMD python ./index.py
 
 ### how to using host network in docker
 
-   ****docker run --rm -d --network host --name my_nginx nginx
+   **docker run --rm -d --network host --name my_nginx nginx
 
 
 
